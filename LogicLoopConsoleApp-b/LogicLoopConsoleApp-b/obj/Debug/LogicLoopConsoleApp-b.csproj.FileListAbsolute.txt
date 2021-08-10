@@ -1,0 +1,7 @@
+C:\Users\pc\source\repos\LogicLoopConsoleApp-b\LogicLoopConsoleApp-b\bin\Debug\LogicLoopConsoleApp-b.exe.config
+C:\Users\pc\source\repos\LogicLoopConsoleApp-b\LogicLoopConsoleApp-b\bin\Debug\LogicLoopConsoleApp-b.exe
+C:\Users\pc\source\repos\LogicLoopConsoleApp-b\LogicLoopConsoleApp-b\bin\Debug\LogicLoopConsoleApp-b.pdb
+C:\Users\pc\source\repos\LogicLoopConsoleApp-b\LogicLoopConsoleApp-b\obj\Debug\LogicLoopConsoleApp-b.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\LogicLoopConsoleApp-b\LogicLoopConsoleApp-b\obj\Debug\LogicLoopConsoleApp-b.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\LogicLoopConsoleApp-b\LogicLoopConsoleApp-b\obj\Debug\LogicLoopConsoleApp-b.exe
+C:\Users\pc\source\repos\LogicLoopConsoleApp-b\LogicLoopConsoleApp-b\obj\Debug\LogicLoopConsoleApp-b.pdb
