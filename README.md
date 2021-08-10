@@ -1,6 +1,7 @@
 # LogicLoop
 
-==> **For assignment 2 need to change connection string  **                                                                 
+==> **For assignment 2 need to change connection string  **                                                                                                           
+==> database mdf file is in root database folder
 
 ==> Basic Authentication is made with static username and password i can do it also with db query if needed so you just enter **username = admin, password  = admin**.
 ==> APi url is http://localhost:56861/
