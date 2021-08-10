@@ -1,4 +1,5 @@
 # LogicLoop
+==> For chessboard task ,C# code genrated chessboard html file is in the Root ChessBoard folder.                                      
 
 ==> **For assignment 2 need to change connection string  **                                                                                                           
 ==> database mdf file is in root database folder
