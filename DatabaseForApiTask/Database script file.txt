@@ -1,0 +1,162 @@
+USE [master]
+GO
+/****** Object:  Database [LLdb]    Script Date: 10-08-2021 06:27:03 PM ******/
+CREATE DATABASE [LLdb]
+go
+USE [LLdb]
+GO
+/****** Object:  Table [dbo].[task]    Script Date: 10-08-2021 06:27:03 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[task](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[title] [nvarchar](300) NULL,
+	[description] [nvarchar](300) NULL,
+	[done] [bit] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[task] ON 
+GO
+INSERT [dbo].[task] ([id], [title], [description], [done]) VALUES (1, N'Edit Test Task', N'Edit Test description', 1)
+GO
+SET IDENTITY_INSERT [dbo].[task] OFF
+GO
+/****** Object:  StoredProcedure [dbo].[llp_task_delete]    Script Date: 10-08-2021 06:27:03 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+create PROCEDURE [dbo].[llp_task_delete](
+	@id			int	= null
+)
+AS
+BEGIN  
+if(@id is not null and @id <> 0)
+	begin
+		delete from task where id= @id
+	end
+							
+END
+
+
+
+
+
+
+
+
+
+
+GO
+/****** Object:  StoredProcedure [dbo].[llp_task_insert_update]    Script Date: 10-08-2021 06:27:03 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[llp_task_insert_update]
+
+		@id						int	= null,
+		@title					nvarchar(300)	= null,
+		@description			nvarchar(300)	= null
+
+AS
+BEGIN
+
+	IF @id = 0
+
+		BEGIN
+			
+			INSERT INTO task
+			(
+					[title]
+					,[description]
+					,[done]
+				     
+			)				
+			VALUES
+			(
+					@title
+					,@description
+					,1
+			)
+
+		END
+
+
+	IF  @id <>0
+		BEGIN
+			UPDATE	task
+			SET
+							[title]	= @title
+						  ,[description]		= @description
+						  ,[done]	= 1
+				   
+
+			WHERE	id = @id
+		END
+	
+END
+GO
+/****** Object:  StoredProcedure [dbo].[llp_task_select]    Script Date: 10-08-2021 06:27:03 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[llp_task_select](
+	@id			int	= null
+)
+AS
+BEGIN  
+
+	declare @Sql	as nvarchar(max),
+	@_Order_by	as nvarchar(4000),
+	@_Criteria	as nvarchar(4000) 
+
+	SET @_Criteria = '';
+	SET @_Order_by=''
+	SET @_Order_by=' order by title'
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+		BEGIN
+			set @Sql = 'select 	[id]
+								,[title]
+								,[description]
+								,[done]	
+						from task
+						where id <> ''''
+								'
+		END	
+
+---------filter product id-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	IF @Id <> 0 and @Id != 0
+	BEGIN
+		set @_Criteria = @_Criteria + ' and Id = @Id '
+	END
+	
+	set @Sql = @Sql + @_Criteria + @_Order_by
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Declare @ParamDefination nvarchar(1000)
+	set		@ParamDefination = '
+								@id			int	= null
+							
+	'
+	print @Sql
+	EXEC sp_executesql @Sql,	@ParamDefination	, 
+								@id															
+								
+							
+END
+
+
+
+
