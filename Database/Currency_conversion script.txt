@@ -1,0 +1,409 @@
+USE [LLdb]
+GO
+
+/****** Object:  Table [dbo].[curr]    Script Date: 13-08-2021 09:12:39 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[curr](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[curr_name] [nvarchar](10) NULL,
+	[price] [nvarchar](50) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+--------------------------------------------------------------
+
+SET IDENTITY_INSERT [dbo].[curr] ON 
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (1, N'AED', N'4.321483')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (2, N'AFN', N'95.109684')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (3, N'ALL', N'121.492884')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (4, N'AMD', N'579.17368')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (5, N'ANG', N'2.111557')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (6, N'AOA', N'750.545616')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (7, N'ARS', N'114.255475')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (8, N'AUD', N'1.599272')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (9, N'AWG', N'2.118103')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (10, N'AZN', N'2.004531')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (11, N'BAM', N'1.958294')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (12, N'BBD', N'2.375189')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (13, N'BDT', N'99.62006')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (14, N'BGN', N'1.954448')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (15, N'BHD', N'0.443253')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (16, N'BIF', N'2332.725456')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (17, N'BMD', N'1.176561')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (18, N'BND', N'1.597711')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (19, N'BOB', N'8.111007')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (20, N'BRL', N'6.172117')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (21, N'BSD', N'1.17638')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (22, N'BTC', N'2.5304223')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (23, N'BTN', N'87.369744')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (24, N'BWP', N'13.129021')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (25, N'BYN', N'2.934993')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (26, N'BYR', N'23060.58699')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (27, N'BZD', N'2.371184')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (28, N'CAD', N'1.472595')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (29, N'CDF', N'2356.651289')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (30, N'CHF', N'1.08223')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (31, N'CLF', N'0.033001')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (32, N'CLP', N'910.575262')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (33, N'CNY', N'7.622818')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (34, N'COP', N'4540.347203')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (35, N'CRC', N'731.160077')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (36, N'CUC', N'1.176561')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (37, N'CUP', N'31.178855')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (38, N'CVE', N'110.40393')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (39, N'CZK', N'25.392412')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (40, N'DJF', N'209.423534')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (41, N'DKK', N'7.436816')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (42, N'DOP', N'67.287673')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (43, N'DZD', N'159.139787')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (44, N'EGP', N'18.473886')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (45, N'ERN', N'17.654071')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (46, N'ETB', N'53.039844')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (47, N'EUR', N'1')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (48, N'FJD', N'2.462012')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (49, N'FKP', N'0.850704')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (50, N'GBP', N'0.850494')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (51, N'GEL', N'3.629672')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (52, N'GGP', N'0.850704')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (53, N'GHS', N'7.052274')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (54, N'GIP', N'0.850704')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (55, N'GMD', N'60.180978')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (56, N'GNF', N'11485.9537')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (57, N'GTQ', N'9.110865')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (58, N'GYD', N'245.809322')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (59, N'HKD', N'9.158265')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (60, N'HNL', N'27.933151')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (61, N'HRK', N'7.497636')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (62, N'HTG', N'114.420985')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (63, N'HUF', N'352.885979')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (64, N'IDR', N'16905.29276')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (65, N'ILS', N'3.786419')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (66, N'IMP', N'0.850704')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (67, N'INR', N'87.393448')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (68, N'IQD', N'1718.071988')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (69, N'IRR', N'49539.08217')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (70, N'ISK', N'147.999525')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (71, N'JEP', N'0.850704')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (72, N'JMD', N'181.747708')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (73, N'JOD', N'0.834207')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (74, N'JPY', N'129.629901')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (75, N'KES', N'128.601253')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (76, N'KGS', N'99.762929')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (77, N'KHR', N'4797.236748')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (78, N'KMF', N'489.50763')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (79, N'KPW', N'1058.904218')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (80, N'KRW', N'1369.875386')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (81, N'KWD', N'0.354086')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (82, N'KYD', N'0.980334')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (83, N'KZT', N'500.30958')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (84, N'LAK', N'11281.29616')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (85, N'LBP', N'1778.638203')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (86, N'LKR', N'234.977992')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (87, N'LRD', N'201.927223')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (88, N'LSL', N'17.18369')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (89, N'LTL', N'3.474078')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (90, N'LVL', N'0.711689')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (91, N'LYD', N'5.325401')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (92, N'MAD', N'10.569901')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (93, N'MDL', N'20.686331')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (94, N'MGA', N'4596.634314')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (95, N'MKD', N'61.692633')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (96, N'MMK', N'1936.289188')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (97, N'MNT', N'3354.257847')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (98, N'MOP', N'9.430868')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (99, N'MRO', N'420.031918')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (100, N'MUR', N'49.943656')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (101, N'MVR', N'18.189755')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (102, N'MWK', N'956.310402')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (103, N'MXN', N'23.371669')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (104, N'MYR', N'4.985678')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (105, N'MZN', N'74.911712')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (106, N'NAD', N'16.907492')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (107, N'NGN', N'484.152405')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (108, N'NIO', N'41.307981')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (109, N'NOK', N'10.367393')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (110, N'NPR', N'139.791911')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (111, N'NZD', N'1.676346')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (112, N'OMR', N'0.452998')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (113, N'PAB', N'1.17638')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (114, N'PEN', N'4.804746')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (115, N'PGK', N'4.183364')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (116, N'PHP', N'59.450421')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (117, N'PKR', N'193.452437')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (118, N'PLN', N'4.573243')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (119, N'PYG', N'8142.145915')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (120, N'QAR', N'4.283833')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (121, N'RON', N'4.911437')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (122, N'RSD', N'117.698109')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (123, N'RUB', N'86.299186')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (124, N'RWF', N'1185.822215')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (125, N'SAR', N'4.41254')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (126, N'SBD', N'9.473211')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (127, N'SCR', N'16.430913')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (128, N'SDG', N'525.335598')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (129, N'SEK', N'10.197322')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (130, N'SGD', N'1.596477')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (131, N'SHP', N'0.850704')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (132, N'SLL', N'12059.74547')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (133, N'SOS', N'688.288029')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (134, N'SRD', N'25.108394')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (135, N'STD', N'24352.42814')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (136, N'SVC', N'10.292952')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (137, N'SYP', N'1479.63939')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (138, N'SZL', N'17.449558')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (139, N'THB', N'39.230068')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (140, N'TJS', N'13.416383')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (141, N'TMT', N'4.117962')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (142, N'TND', N'3.266724')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (143, N'TOP', N'2.65985')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (144, N'TRY', N'10.06164')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (145, N'TTD', N'7.999767')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (146, N'TWD', N'32.745445')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (147, N'TZS', N'2727.982737')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (148, N'UAH', N'31.397009')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (149, N'UGX', N'4164.340323')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (150, N'USD', N'1.176561')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (151, N'UYU', N'51.342609')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (152, N'UZS', N'12567.05413')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (153, N'VEF', N'2.51584')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (154, N'VND', N'26863.819')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (155, N'VUV', N'130.465184')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (156, N'WST', N'3.012894')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (157, N'XAF', N'656.783483')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (158, N'XAG', N'0.050096')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (159, N'XAU', N'0.000667')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (160, N'XCD', N'3.179714')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (161, N'XDR', N'0.828342')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (162, N'XOF', N'656.783483')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (163, N'XPF', N'119.126355')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (164, N'YER', N'294.139912')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (165, N'ZAR', N'17.400274')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (166, N'ZMK', N'10590.42348')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (167, N'ZMW', N'22.709677')
+GO
+INSERT [dbo].[curr] ([id], [curr_name], [price]) VALUES (168, N'ZWL', N'378.852595')
+GO
+SET IDENTITY_INSERT [dbo].[curr] OFF
+GO
+
+
+
+
+-----------------------------------------
+
+USE [LLdb]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+--llp_curr_convert_select 'AMD','INR','50'
+alter PROCEDURE [dbo].[llp_curr_convert_select](
+
+	@req nvarchar(10)= null,
+	@call nvarchar(10)= null,
+	@qty nvarchar(50)= null
+
+)
+AS
+BEGIN  
+
+declare @reqBasePrice nvarchar(50) = (select price from curr where curr_name =@req);
+declare @callBasePrice nvarchar(50) = (select price from curr where curr_name =@call);
+
+select @call as 'From-curr',
+		@qty as 'From-amt',
+		@req as 'To-curr',
+		(cast(@reqBasePrice as decimal(16,6))/cast(@callBasePrice as decimal(16,6))*cast(@qty as decimal(16,6))) as 'To-amt'
+ 																							
+END
+
+
+
+
+
+
+
+
+
+
+
+
